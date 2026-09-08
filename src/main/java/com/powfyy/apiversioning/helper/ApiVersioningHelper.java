@@ -1,9 +1,8 @@
-package com.powfyy.apiversioning.utils;
+package com.powfyy.apiversioning.helper;
 
 import com.powfyy.apiversioning.config.ApiVersionProperties;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
-import lombok.experimental.UtilityClass;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
