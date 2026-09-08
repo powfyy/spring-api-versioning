@@ -58,7 +58,7 @@ public class VersionedRequestMappingHandlerMapping extends RequestMappingHandler
                 String basePrefix = internal ? apiVersionProperties.getInternalPrefix() : apiVersionProperties.getExternalPrefix();
 
                 String prefix = basePrefix + "/v" + version;
-                if (apiVersionProperties.getPathSuffix() != null && !apiVersionProperties.getPathSuffix().trim().isEmpty()) {
+                if (apiVersionProperties.getPathSuffix() != null && !apiVersionProperties.getPathSuffix().isBlank()) {
                     prefix = prefix + apiVersionProperties.getPathSuffix().trim();
                 }
                 info = RequestMappingInfo.paths(prefix).build().combine(info);
